@@ -1,0 +1,22 @@
+name: Build
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        submodules: recursive 
+    - uses: Dovyski/setup-opencv-action@v1
+      with:
+        opencv-version: master
+    - name: run-cmake
+      uses: lukka/run-cmake@v2.5
