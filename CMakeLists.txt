@@ -123,6 +123,11 @@ add_subdirectory(extern/glfw)
 message("${BoldYellow}Using local copy of ImGui${ColorReset}")
 include(extern/add_imgui_library.cmake)
 
+# Jetson-BerryIMU
+message("${BoldYellow}Using local copy of Jetson-BerryIMU${ColorReset}")
+add_subdirectory(extern/Jetson-Nano-BerryIMU)
+
+
 message("${BoldYellow}Library search complete!${ColorReset}")
 
 message("${BoldYellow}Checking OpenMP support${ColorReset}")
