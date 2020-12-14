@@ -7,6 +7,6 @@
 [submodule "extern/imgui"]
 	path = extern/imgui
 	url = https://github.com/ocornut/imgui.git
-[submodule "extern/Jetson-Nano-BerryIMU"]
-	path = extern/Jetson-Nano-BerryIMU
-	url = https://github.com/m516/Jetson-Nano-BerryIMU.git
+[submodule "extern/libberryimu"]
+	path = extern/libberryimu
+	url = https://github.com/m516/libberryimu.git
